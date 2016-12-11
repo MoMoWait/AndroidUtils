@@ -59,7 +59,7 @@ public class LogUtils {
         }
     }
 
-    public void d(String strTag, String strLog)
+    public static void d(String strTag, String strLog)
     {
         if (mBDebugSwithch)
         {
@@ -67,7 +67,7 @@ public class LogUtils {
         }
     }
 
-    public void i(String strTag, String strLog)
+    public static void i(String strTag, String strLog)
     {
         if (mBInfoSwitch)
         {
@@ -75,7 +75,7 @@ public class LogUtils {
         }
     }
 
-    public void w(String strTag, String strLog)
+    public static void w(String strTag, String strLog)
     {
         if (mBWarningSwitch)
         {
@@ -83,7 +83,7 @@ public class LogUtils {
         }
     }
 
-    public void e(String strTag, String strLog)
+    public static void e(String strTag, String strLog)
     {
         if (mBErrorSwitch)
         {
