@@ -8,6 +8,10 @@ import java.security.MessageDigest;
  */
 public class TextUtils {
 
+    private TextUtils(){
+
+    }
+
     /**
      * 将字符串进行MD5加密
      * @param inStr
@@ -37,7 +41,12 @@ public class TextUtils {
         return hexValue.toString();
     }
 
-    public static boolean isEmpty(){
-        return true;
+    /**
+     * 判断字符串是否为空
+     * @param str
+     * @return
+     */
+    public static boolean isEmpty(CharSequence str){
+        return android.text.TextUtils.isEmpty(str);
     }
 }
