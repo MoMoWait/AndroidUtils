@@ -1,5 +1,5 @@
 package momo.cn.edu.fjnu.androidutils.utils;
-
+import android.support.annotation.StringRes;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -42,6 +42,14 @@ public class ToastUtils {
         toast.show();
     }
 
+
+    /**
+     * 显示字符串资源
+     * @param strId
+     */
+    public static void showToast(@StringRes int strId){
+        Toast.makeText(CommonValues.application, strId, Toast.LENGTH_SHORT).show();
+    }
 
     /**
      * 显示默认的Toast消息

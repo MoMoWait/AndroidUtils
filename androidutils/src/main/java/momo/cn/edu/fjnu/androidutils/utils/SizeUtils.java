@@ -41,4 +41,14 @@ public class SizeUtils {
         return pxValue / DeviceInfoUtils.getDenstity(CommonValues.application);
     }
 
+    /**
+     * px装成sp
+     * @param pxValue
+     * @return
+     */
+    public static float px2sp(int pxValue){
+        return pxValue / DeviceInfoUtils.getScaleDenstity(CommonValues.application);
+    }
+
+
 }

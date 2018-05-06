@@ -17,6 +17,7 @@ public class ActivityExitUtils {
     private ActivityExitUtils(){
 
     }
+
     /**
      * 增加一个activity
      * @param activity
@@ -25,6 +26,11 @@ public class ActivityExitUtils {
 
         activities.add(activity);
 
+    }
+
+
+    public static void removeActivity(Activity activity){
+        activities.remove(activity);
     }
 
     /***
@@ -43,7 +49,7 @@ public class ActivityExitUtils {
      * 获取所有已经添加的Activity
      * @return
      */
-    public List<Activity> getActivities(){
+    public static List<Activity> getActivities(){
         return activities;
     }
 
