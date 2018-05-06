@@ -36,4 +36,8 @@ public class TextUtils {
         }
         return hexValue.toString();
     }
+
+    public static boolean isEmpty(){
+        return true;
+    }
 }
